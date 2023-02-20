@@ -1,0 +1,26 @@
+<div class="p-3">
+  <h1 class="mb-3">Stupid Coaching</h1>
+
+  <div class="border-start border-5 p-2 mb-3">
+    <%= @question %>
+    <p>-- You</p>
+  </div>
+
+  <div class="border-start border-5 bg-warning bg-opacity-10 p-2 mb-3">
+    <%= @answer %>
+    <p>-- Your Coach</p>
+  </div>
+
+  <%# <div class="text-decoration-none"> %>
+    <%= link_to "Ask a new question", ask_path, class: "text-decoration-none"%>
+  <%# </div> %>
+  <!-- Je n'arrivais pas à mettre une classe dans mon link_to -->
+  <!-- J'ai donc mis une div autour, à laquelle j'ai appliqué la classe bootstrap text-decoration-none -->
+  <!-- ça ne marchait pas!! -->
+  <!-- A la place, j'ai appliqué du CSS sur la balse <a> dans application.css -->
+  <!-- ça marchait! -->
+  <!-- Nadia m'explique qu'on peut donner des noms de classe à un élément link_to en lui passant l'option:-->
+  <!-- class: "string des classes". link_to prend deux paramètres et des options sous forme de hash -->
+  <!-- d'où la syntaxe après ask_path, -->
+
+</div>
